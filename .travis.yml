@@ -7,7 +7,7 @@ script: mvn install
 after_success:
 - ls -l
 - cp -r /home/travis/build/garashis/Spring/target/demo-0.0.1-SNAPSHOT.jar target
-- git add .
-- git config --global username "Travis"
-- git push -u garashis -p gaurav1@ origin master
+- git remote add origin https://garashis:$GITHUB_API_KEY@github.com/user-name/repo-name.git
+- git commit -m "Travis Adding Build File"
+- git push -fq origin master
 - echo -e "Done with magic\n"
