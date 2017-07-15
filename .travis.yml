@@ -8,8 +8,6 @@ after_success:
 - ls -l
 - cp -r /home/travis/build/garashis/Spring/target/demo-0.0.1-SNAPSHOT.jar target
 - git add .
-- git commit -m "build to repo2"
-- git config --global user.email "ashishg.garg@gmail.com"
 - git config --global username "Travis"
-- git push -fq origin master
+- git push -u garashis -p gaurav1@ origin master
 - echo -e "Done with magic\n"
