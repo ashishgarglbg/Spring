@@ -13,7 +13,7 @@ after_success:
 - ls -l
 - git config --global user.email "ashishg.garg@gmail.com"
 - git config --global user.name "Ashish Garg"
-- git clone --depth=50 --branch=master https://github.com/garashis/Spring.git garashis/Spring
+- git clone --depth=50 --branch=master https://github.com/garashis/Spring.git
 - ls -l
 - cp -r /home/travis/build/garashis/Spring/target/demo-0.0.1-SNAPSHOT.jar $HOME/buildApk/target
 - ls -l
