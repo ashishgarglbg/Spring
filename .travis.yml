@@ -1,5 +1,15 @@
 language: java
 jdk: oraclejdk8
-before_script: cd project
+
 install: true
 script: mvn install
+
+after_success:
+- cd repo2
+- git clone https://github.com/garashis/Spring.git
+- cp -r /home/travis/build/garashis/Spring/target/demo-0.0.1-SNAPSHOT.jar repo2/
+- cd repo2
+- git add .
+- git commit -m "build to repo2"
+- git push -fq origin master
+- echo -e "Done with magic\n"
