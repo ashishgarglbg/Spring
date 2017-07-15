@@ -11,5 +11,5 @@ after_success:
 - git config --global user.email "ashishg.garg@gmail.com"
 - git config --global user.name "Ashish Garg"
 - git commit -m "Travis Adding Build File"
-- git push -fq origin master
+- git push origin master
 - echo -e "Done with magic\n"
