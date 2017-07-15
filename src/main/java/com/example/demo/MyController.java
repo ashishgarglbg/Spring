@@ -8,7 +8,7 @@ public class MyController {
 	
 	@RequestMapping("/")
 	public String hello() {
-		return "<h1>I m running.</h1>";
+		return "<h1>I m running again.</h1>";
 	}
 
 }
